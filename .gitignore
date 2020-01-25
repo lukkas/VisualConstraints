@@ -43,3 +43,6 @@ xcuserdata/
 
 ## Test output
 test_output
+
+#$ Swift Package Manager
+.build/
