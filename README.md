@@ -29,6 +29,35 @@ For more details see [CocoaPods website](http://cocoapods.org)
 Add `github "lukkas/Visually"` to your Cartfile, run `carthage update` and drag built frameworks to your Xcode project.
 For more details see [Carthage git repository](https://github.com/Carthage/Carthage)
 
+### Swift Package Manager
+
+To install Visually using **Swift Package Manager** go through following steps:
+
+1. Add following package dependency in you **Package.swift** ``` .package(url: "https://github.com/lukkas/Visually.git", from: "2.0.0") ```
+2. Add following target dependency in your **Package.swift** ``` dependencies: ["Visually"]) ```
+
+For instance this is how it might look like:
+```swift
+import PackageDescription
+
+let package = Package(
+    name: "YourExecutable",
+    products: [
+        .executable(
+            name: "YourExecutable",
+            targets: ["YourExecutable"])
+    ],
+    dependencies: [
+        .package(url: "https://github.com/lukkas/Visually.git", from: "2.0.0")
+    ],
+    targets: [
+        .target(
+            name: "YourExecutable",
+            dependencies: ["Visually"])
+    ]
+)
+```
+
 ## Operators and rules
 
 Visually defines 15 custom operators and adds subscripts to UIView/NSView in order to achieve its objectives. These operators can be divided into 5 groups:
