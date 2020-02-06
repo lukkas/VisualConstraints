@@ -31,31 +31,11 @@ For more details see [Carthage git repository](https://github.com/Carthage/Carth
 
 ### Swift Package Manager
 
-To install Visually using **Swift Package Manager** go through following steps:
-
-1. Add following package dependency in you **Package.swift** ``` .package(url: "https://github.com/lukkas/Visually.git", from: "2.0.0") ```
-2. Add following target dependency in your **Package.swift** ``` dependencies: ["Visually"]) ```
-
-For instance this is how it might look like:
+Add following package dependency in your **Package.swift**:
 ```swift
-import PackageDescription
-
-let package = Package(
-    name: "YourExecutable",
-    products: [
-        .executable(
-            name: "YourExecutable",
-            targets: ["YourExecutable"])
-    ],
     dependencies: [
         .package(url: "https://github.com/lukkas/Visually.git", from: "2.0.0")
-    ],
-    targets: [
-        .target(
-            name: "YourExecutable",
-            dependencies: ["Visually"])
     ]
-)
 ```
 
 ## Operators and rules
