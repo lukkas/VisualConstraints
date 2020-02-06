@@ -2,7 +2,7 @@
 [![Cocoapods](https://img.shields.io/cocoapods/v/Visually.svg?style=flat)](https://cocoapods.org/pods/Visually)
 [![Platform](https://img.shields.io/cocoapods/p/Visually.svg?style=flat)](https://cocoapods.org/pods/Visually)
 [![Build Status](https://travis-ci.org/lukkas/Visually.svg)](https://travis-ci.org/codecov/example-swift) 
-[![codecov.io](https://codecov.io/gh/lukkas/Visually/branch/master/graphs/badge.svg)](https://codecov.io/gh/codecov/example-swift/branch/master)
+[![codecov.io](https://codecov.io/gh/lukkas/Visually/branch/master/graphs/badge.svg)](https://codecov.io/gh/lukkas/Visually)
 [![License](https://img.shields.io/cocoapods/l/Visually.svg?style=flat)](https://cocoapods.org/pods/Visually)
 
 # Visually
@@ -28,6 +28,15 @@ For more details see [CocoaPods website](http://cocoapods.org)
 
 Add `github "lukkas/Visually"` to your Cartfile, run `carthage update` and drag built frameworks to your Xcode project.
 For more details see [Carthage git repository](https://github.com/Carthage/Carthage)
+
+### Swift Package Manager
+
+Add following package dependency in your **Package.swift**:
+```swift
+    dependencies: [
+        .package(url: "https://github.com/lukkas/Visually.git", from: "2.0.0")
+    ]
+```
 
 ## Operators and rules
 
